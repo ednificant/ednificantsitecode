@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+/* Fonts */
+
+@font-face {
+	font-family: LemonMilk;
+	src: url(LemonMilk.woff) format('woff'),
+		 url(LemonMilk.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: LemonMilkLight;
+	src: url(LemonMilklight.woff) format('woff'),
+		 url(LemonMilklight.ttf)	format('truetype');
+}
+
+@font-face {
+	font-family: Geo;
+	src: url(GeosansLight.woff) format('woff'),
+		 url(GeosansLight.ttf)	format('truetype');
+}
+
+/*
+Jon Tabshi's Portfolio
+Author: Jon Tabshi
+Date Started: 5/18/19
+Date Finished:
+*/
+
+
+/* Structure Styles */
+
+html {
+	background-color: hsl(214, 67%, 41%);
+	padding-left: 20px;
+	padding-right: 23px;
+}
+
+body {
+	margin-bottom:0px;
+	margin-top: 0px;
+	background-color: hsl(0, 0%, 100%);
+}
+
+article#index {
+	padding-bottom:75px;
+}
+
+footer {
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+header {
+	background-color: hsl(0, 0%, 100%);
+}
+
+/* Navigation Styles */
+
+div#logo {
+	padding-left: 10px;
+}
+
+div.topnav {
+	padding-left: 10px;
+}
+
+div.topnav a {
+	width: 106px;
+	font-family: LemonMilk, sans-serif;
+}
+
+.sidenav a {
+	font-family: LemonMilkLight, sans-serif;
+}
+
+.sidenav > a#button {
+	font-family: serif;
+	font-size: 60px
+}
+/* Heading Styles */
+
+h1 {
+	font-family: LemonMilk, sans-serif;
+	color:hsl(214, 67%, 41%);
+	font-size: 3.0em;
+	text-align: left;
+	padding-left: 20px;
+	letter-spacing: 2px;
+	max-width: 100%
+}
+
+h2 {
+	font-family: LemonMilkLight, sans-serif;
+	color: hsl(214, 67%, 41%);
+	font-size: 1.5em;
+	text-align: left;
+	padding-left: 20px;
+	letter-spacing: 2px;
+}
+
+aside#personal h3 {
+	font-family:LemonMilkLight, sans-serif;
+	color: hsl(214, 67%, 41%);
+	font-size: 1.25em;
+	text-align: center;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+
+aside#podcast h3 {
+	font-family:LemonMilkLight, sans-serif;
+	color: hsl(214, 67%, 41%);
+	font-size: 1.25em;
+	text-align: center;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+article#website h2 {
+	text-align: left;
+	padding-left: 30px;
+	max-width: 100%
+}
+
+article#graphics h2{
+	text-align: left;
+	padding-left:30px ;
+}
+
+h3#resume {
+	font-family: LemonMilkLight, sans-serif;
+	color: hsl(214, 67%, 41%);
+	padding-left: 30px;
+
+}
+
+h2#social {
+	text-align: center;
+	text-decoration: underline;
+	padding-left:35px;
+	font-size: 1.75em;
+}
+
+h1#contact {
+	text-align: center;
+}
+
+/* List Styles */
+article#resume > ul > li {
+	font-family: Geo, sans-serif;
+	color: hsl(0, 0%, 45%);
+	font-size: : 1.1em;
+	list-style-type: square;
+	margin-left: 15px;
+}
+
+/* Article Styles */
+
+article#website img {
+	padding-left: 50px;
+	max-width: 100%;
+}
+
+article#graphics img {
+		padding-left: 30px;
+			max-width: 100%;
+}
+
+article#graphics > img#jt {
+		padding-left: 30px ;
+			max-width: 100%;
+}
+
+article#blog img{
+	padding-left: 30px;
+		max-width: 100%;
+}
+
+aside#personal > ul > li{
+	list-style-type:none;
+	text-align:center;
+}
+
+aside#podcast > ul > li{
+	list-style-type:none;
+	text-align: center;
+}
+/* Paragraph Styles */
+
+p#welcome {
+	font-size: 1.3em;
+}
+
+p {
+	font-family: Geo, sans-serif;
+	font-size: 1.1em;
+	color: hsl(0, 0%, 45%);
+	padding-right: 900px;
+	padding-left: 30px;
+	margin-bottom: 40px;
+}
+
+/* Footer Styles */
+footer {
+	font-family:Geo, sans-serif;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+footer {
+	background-color: hsl(0, 0%, 65%);
+}
+
+/* Fades */

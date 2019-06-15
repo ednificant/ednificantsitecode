@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<!--
+Jon Tabshi's Portfolio | Graphics
+Author: Jon Tabshi
+Date Started: 5/16/19
+Date Finished:
+-->
+
+	<meta charset="utf-8" />
+	<title> Jon Tabshi's Portfolio | Graphics </title>
+<meta name="viewport" content="width=device-width", initial-scale="1"/>
+
+	<link href="pt_styles.css" rel="stylesheet"/>
+	<link href="pt_layouts.css" rel="stylesheet"/>
+</head>
+<body>
+	<header class="logo">
+		<div id="mySidenav" class="sidenav">
+			<a id="button" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a class="active" href="index.html">Home</a>
+			<a href="website.html">Websites</a>
+			<a href="graphics.html">Graphics</a>
+			<a href="blog.html">Blog</a>
+			<a href="philosophy.html">Philosophy</a>
+			<a href="resume.html">Resume</a>
+			<a href="skillsummary.html">Skills</a>
+			<a href="contact.html">Contact</a>
+		</div>
+
+	<script>
+		function openNav() {
+		document.getElementById("mySidenav").style.width = "100%";
+}
+
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+}
+	</script>
+
+			<span id="button" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+
+				<div id="logo"/>
+					<a href="index.html" ><img src="logo.jpg" alt="Jon Tabshi's Portfolio" width="200 px" /></a>
+				</div>
+			<nav>
+				<div class="topnav">
+					<a href="index.html">Home</a>
+					<a href="website.html">Websites</a>
+					<a class="active" href="graphics.html">Graphics</a>
+					<a href="blog.html">Blog</a>
+					<a href="philosophy.html">Philosophy</a>
+					<a href="resume.html">Resume</a>
+					<a href="skillsummary.html">Skills</a>
+					<a href="contact.html">Contact</a>
+				<div>
+			</nav>
+	</header>
+	<h1>Graphics</h1>
+	<article id="graphics">
+		<h2>JT Podcast</h2>
+		<img id="jt" src="jtpodcast.png" alt="JT Podcast" width="300 px" />
+		<h2>Mastercard</h2>
+		<img src="mastercard.png" alt="Mastercard" width="600 px" />
+		<h2>FireEye</h2>
+		<img src="fireeye.png" alt="FireEye" width="600 px" />
+	</article>
+	<footer>
+	Jon Tabshi &#8226; Whitehall, PA &#8226; 484-764-3986
+	</footer>
+</body>
+</html>

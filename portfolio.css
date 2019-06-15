@@ -1,0 +1,1542 @@
+@charset "UTF-8";
+/*Enter your secret message here*/
+
+/*------------------------------*/
+/*------------------------------*/
+/*----------Reset----------*/
+html, body, nav, img, section, article, p, footer, div {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+hr {
+    background: white;
+    width: 30%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #333; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #444; 
+}
+
+.backUp {
+    background: #8974d6;
+    height: 50px;
+    width: 50px;
+    float: right;
+    position: fixed;
+    top: 600px;
+    left: 0;
+    display: none;
+    z-index: 7;
+    opacity: 0.5;
+    border-color: #8974d6; 
+    transition: 1s;
+}
+
+.loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    background: #c4c4c4;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    display: block;
+}
+
+-webkit-.loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    background: #c4c4c4;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    display: block;
+}
+
+
+#loadingText {
+    color: black;
+    position: relative;
+    top: 400px;
+    left: 0;
+    font-size: 25px;
+    font-family: Oswald;
+}
+
+-webkit-#loadingText {
+    color: black;
+    position: relative;
+    top: 400px;
+    left: 0;
+    font-size: 25px;
+    font-family: Oswald;
+}
+
+.loadingLabel1 {
+    position: relative;
+    top: 400px;
+    left: 0;
+    font-size: 45px;
+    font-family: Oswald;
+    display: inline-block;
+    animation: loading1 0.7s infinite;
+    -webkit-animation: loading1 1s infinite;
+}
+
+-webkit-.loadingLabel1 {
+    color: white;
+    position: relative;
+    top: 400px;
+    left: 0;
+    font-size: 45px;
+    font-family: Oswald;
+    background: white;
+    display: inline-block;
+    animation: loading1 0.7s infinite;
+    -webkit-animation: loading1 1s infinite;
+}
+@keyframes loading1 {
+    0%{
+    transform: rotate(0deg);}
+    100%{
+    transform: rotate(360deg);}
+}
+-webkit-@keyframes loading1 {
+    0%{
+    transform: rotate(0deg);}
+    100%{
+    transform: rotate(360deg);}
+}
+
+
+
+
+
+
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+
+/*-------Profile Image---------*/
+.profile-img {
+    text-align: center;
+}
+
+.profile-scrolldown {
+    text-align: center;
+    top: 0;
+    left: 0;
+    position: relative;
+    transition: 1s;
+    animation: scrolldown 1s infinite;
+}
+
+@keyframes scrolldown {
+    25%{transform: scale(0.5)};
+    50%{transform: scale(1)};
+    75%{transform: scale(0.5)};
+    100%{transform: scale(1)};
+}
+
+#done {
+    height: 10px;
+    width: 10px;
+    border-radius: 20em;
+    background: green;
+    display: inline-block;
+    text-align: right;
+    margin-bottom: 4px;
+}
+
+#workingOn {
+    height: 10px;
+    width: 10px;
+    border-radius: 20em;
+    background: #d28a1c;
+    display: inline-block;
+    text-align: right;
+    margin-bottom: 4px;
+}
+
+#notdone {
+    height: 10px;
+    width: 10px;
+    border-radius: 20em;
+    background: red;
+    display: inline-block;
+    text-align: right;
+    margin-bottom: 4px;
+}
+.skillset {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.skillset > li {
+    font-size: 20px;
+    font-family: Oswald;
+    list-style: none;
+    display: block;
+    margin: 0 0.5em;
+}
+
+.skillset::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.colorMeaning::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.colorMeaning {
+    display: inline-block;
+    text-align: left;
+    float: left;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.colorMearning > div {
+    display: block;
+
+}
+.colorMearning > h4 {
+}
+
+
+/*----------Navigation----------*/
+
+/* Mobile Nav */
+.tagNav {
+    text-align: left;
+    margin: 0 0.3em;
+    font-family: Oswald;
+    z-index: 1;
+    width: 10%;
+    font-size: 20px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.tagNav > .bar1 {
+    background: white;
+    height: 4px;
+    width: 30px;
+    margin: 0.3em 0;
+    transition: 0.5s;
+    position: relative;
+}
+
+.tagNav > .bar2 {
+    background: white;
+    height: 4px;
+    width: 30px;
+    margin: 0.3em 0;
+    transition: 0.5s;
+    position: relative;
+}
+
+.tagNav > .bar3 {
+    background: white;
+    height: 4px;
+    width: 30px;
+    margin: 0.3em 0;
+    transition: 0.5s;
+    position: relative;
+}
+
+.transformBar .bar1 {
+    transform: rotate(225deg);
+    top: 10px;
+}
+
+.transformBar .bar2 {
+    opacity: 0;
+}
+
+.transformBar .bar3 {
+    transform: rotate(135deg);
+    top: -10px;
+}
+
+
+.tagNav > h6 {
+    color: white;
+    display: inline-block;
+    font-family: fantasy;
+}
+
+.navbar {
+    background: #333;
+    text-align: center;
+    
+}
+
+.mobilenav {
+    display: none;
+}
+
+.label > div {
+    width: 32px;
+    height: 4px;
+    margin: 6px 0;
+    background: white;
+    transition: 5s;
+}
+
+.labelExit > div {
+    width: 32px;
+    height: 4px;
+    margin: 6px 0;
+    background: white;
+    transition: 5s;
+    transform: scale(3)
+}
+
+.dropdown-info {
+    background: #333;
+    height: 0px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    line-height: 2.5em;
+    text-align: center;
+    padding: 0 3em;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+}
+
+.dropdown-info > a {
+    display: block;
+    color: white;
+    font-family: Oswald;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+
+-webkit-.mobilenav {
+    text-align: center;
+    display: none;
+    background: #333;
+    width: 100%;
+    z-index: 5;
+    height: 40px;
+    transition: 1s;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+-moz-.mobilenav {
+    text-align: center;
+    display: none;
+    background: #333;
+    width: 100%;
+    z-index: 5;
+    height: 40px;
+    transition: 1s;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+-ms-.mobilenav {
+    text-align: center;
+    display: none;
+    background: #333;
+    width: 100%;
+    z-index: 5;
+    height: 40px;
+    transition: 1s;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.mobilenav {
+    text-align: center;
+    display: none;
+    background: #333;
+    width: 100%;
+    z-index: 5;
+    height: 40px;
+    transition: 1s;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.mobilenav > ul > a:hover {
+    text-decoration: none;
+    color: black;
+    width: 30%;
+    background: rgba( 140, 140, 140, 0.873 )
+}
+
+.mobilenav > ul > a > img {
+    margin: 0.7em;
+}
+
+.desktopic {
+    height: 120px;
+    width: 100px;
+}
+
+.desktopnav::after {
+    content: "";
+    clear: right;
+    display: block;
+}
+
+-webkit-.navList {
+    margin-top: 2.3em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #dbdbdb;
+    height: 100%;
+    width: 0%;
+    display: block;
+    transition: 1s;
+    z-index: 10000;
+    font-family: Oswald;
+    overflow: hidden;
+}
+
+-moz-.navList {
+    margin-top: 2.3em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #dbdbdb;
+    height: 100%;
+    width: 0%;
+    display: block;
+    transition: 1s;
+    z-index: 10000;
+    font-family: Oswald;
+    overflow: hidden;
+}
+
+-ms-.navList {
+    margin-top: 2.3em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #dbdbdb;
+    height: 100%;
+    width: 0%;
+    display: block;
+    transition: 1s;
+    z-index: 10000;
+    font-family: Oswald;
+    overflow: hidden;
+}
+
+-o-.navList {
+    margin-top: 2.3em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #dbdbdb;
+    height: 100%;
+    width: 0%;
+    display: block;
+    transition: 1s;
+    z-index: 10000;
+    font-family: Oswald;
+    overflow: hidden;
+    
+}
+
+.navList {
+    margin-top: 2.3em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #dbdbdb;
+    height: 100%;
+    overflow: hidden;
+    width: 0%;
+    display: block;
+    transition: 1s;
+    z-index: 10000;
+    font-family: Oswald;
+    
+}
+.navListOpened {
+    margin-top: 2.3em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #333;
+    height: 100%;
+    width: 100%!important;
+    display: block;
+    transition: 1s;
+    z-index: 10000;
+    font-family: Oswald;
+    
+}
+-webkit-.navListOpened {
+    margin-top: 2.3em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #333;
+    height: 100%;
+    width: 100%!important;
+    display: block;
+    transition: 1s;
+    z-index: 10000;
+    font-family: Oswald;
+    
+}
+
+-ms-.navListOpened {
+    margin-top: 2.3em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #333;
+    height: 100%;
+    width: 100%!important;
+    display: block;
+    transition: 1s;
+    z-index: 10000;
+    font-family: Oswald;
+    
+}
+
+-moz-.navListOpened {
+    margin-top: 2.3em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #333;
+    height: 100%;
+    width: 100%!important;
+    display: block;
+    transition: 1s;
+    z-index: 10000;
+    font-family: Oswald;
+    
+}
+.navList > a {
+    display: block;
+    font-size: 30px;
+    opacity: 0.6;
+    transition: 0.6s;
+    color: white;
+    height: 80px;
+}
+
+.navList > h6 {
+    display: block;
+    font-size: 20px;
+    opacity: 1;
+    transition: 0.4s;
+    color: white;
+}
+
+.navList > a:hover:active {
+    background: #666;
+    text-decoration: none;
+}
+
+
+.navhome {
+     display: block;
+    font-size: 30px;
+    opacity: 0.4;
+    transition: 0.4s;
+    color: white;
+    background-position: center;
+    background-size: 90%;
+    height: 80px;
+}
+
+.navabout {
+     display: block;
+    font-size: 30px;
+    opacity: 0.4;
+    transition: 0.4s;
+    color: white;
+    background-position: center;
+    background-size: 90%;
+    height: 80px;
+}
+
+.navresume {
+     display: block;
+    font-size: 30px;
+    opacity: 0.4;
+    transition: 0.4s;
+    color: white;
+    background-position: center;
+    background-size: 90%;
+    height: 80px;
+}
+
+.navphilosophy {
+     display: block;
+    font-size: 30px;
+    opacity: 0.4;
+    transition: 0.4s;
+    color: white;
+    background-position: center;
+    background-size: 90%;
+    height: 80px;
+}
+
+.navprojects {
+     display: block;
+    font-size: 30px;
+    opacity: 0.4;
+    transition: 0.4s;
+    color: white;
+    background-size: 90%;
+    height: 100px;
+}
+
+.navskills {
+     display: block;
+    font-size: 30px;
+    opacity: 0.4;
+    transition: 0.4s;
+    color: white;
+    background-position: center;
+    background-size: 90%;
+    height: 80px;
+}
+
+
+
+#exitButton {
+    float: right;
+    font-size: 25px;
+    background: #c6c6c6;
+    width: 100%;
+    height: 100%;
+    font-family: Oswald;
+}
+
+#exitButton > img {
+    height: 20px;
+    width: 20px;
+    animation: arrowAni 1s infinite;
+    position: relative;
+}
+@keyframes arrowAni {
+    0%{left: 0;}
+    50%{left: -20px;}
+    100%{left: 0;}
+}
+
+
+#exitNav > img {
+    text-align: right;
+}
+
+.desktopnavbar {
+    background: #333;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    transition: 0.3s ease-in;
+    overflow-y: hidden;
+    z-index: 1000;
+}
+
+.desktopnavbar:hover {
+    background: #dbdbdb;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 350px;
+}
+
+.hoverOverMe {
+    color: white;
+    font-size: 26px;
+    animation: hoverOverMe 1s infinite;
+    display: block;
+    transition: 0.5s;
+    position: relative;
+}
+
+.choosePage {
+    color: black;
+    font-size: 26px;
+    display: none;
+    transition: 0.5s;
+}
+
+@keyframes hoverOverMe {
+    0%{opacity: 1;
+    top: 0px;}
+    25%{opacity: 0.8;}
+    50%{opacity: 0.7;
+    top: 10px;}
+    75%{opacity: 0.8;}
+    100%{opacity: 1;
+    top: 0px;}
+}
+
+.desktopnavbar > ul > li {
+    list-style: none;
+    display: inline-block;
+    margin: 2em 5em;
+}
+
+.desktopnavbar > ul > li > a {
+    display: inline-block; 
+    font-family: Oswald;
+    position: relative;
+    transition: 0.3s ease-in;
+    color: black;
+    font-size: 20px;
+}
+
+
+
+.desktopnavbar > ul > li > a:hover {
+    display: inline-block;
+    transform: scale(1.5);
+    text-decoration: none;
+}
+
+
+
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+
+/*----------Body Structures----------*/
+body {
+  position: relative;
+    background: url('images/bgheader.jpg');
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top:2em;
+    z-index: 3;
+    transition: 0.5s;
+}
+
+    .pic1 {
+        background: url('images/homepic1.jpg');
+          position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+        background-attachment: fixed;
+    background-position: 50%20%;
+    text-align: right;
+    padding-top: 1em;
+        height: 450px;
+    z-index: 3;
+                color: white;
+        font-family: Oswald;
+    }
+
+.pic1 > h2 {
+    margin: -0.4em 0em;
+    font-size: 50px;
+    width: 100%;
+    background: rgba( 0, 0, 0, 0.634 )
+}
+
+
+    .pic2 {
+        background: url('images/homepic13.jpg');
+          position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+        background-attachment: fixed;
+    background-position: 50%20%;
+    text-align: right;
+    padding-top: 1em;
+        height: 450px;
+    z-index: 3;
+        color: white;
+        font-family: Oswald;
+    }
+
+.pic2 > h2 {
+    margin: -0.4em 0em;
+    font-size: 50px;
+    width: 100%;
+    background: rgba( 0, 0, 0, 0.634 )
+}
+
+
+
+
+
+html {
+    background-color: #cccccc;
+    
+}
+
+h1, h2, h4, h5, h6 {
+  font-family: Staatliches;
+  letter-spacing: 1px;
+}
+
+footer {
+  background-color: #333;
+  text-align: left;
+  color: white;
+}
+
+footer > h5 {
+  float: right;
+  margin-right: 5px;
+}
+
+
+
+
+p {
+  font-family: PT Serif;
+}
+
+
+
+
+.skills {
+    height: 100px;
+    width: 100px;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+.mobileSkill {
+    display: none;
+}
+
+.skills:hover {
+    transform: scale(1.4);
+}
+
+#skills1 {
+    background: #333;
+    color: white;;
+    position: relative;
+    height: 600px;
+}
+
+
+@keyframes introSkills {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+#skills2 {
+    background: #333;
+    color: white;
+    position: relative;
+    height: 600px;
+    text-align: center;
+}
+.sidePanel {
+    float: left;
+    height: 1000px;
+    background: #333;
+    position: relative;
+    width: 50%;
+    z-index: 2;
+
+}
+
+.sidePanel-1 {
+    background: url('images/homepic10.jpg');
+    height: 575px;
+        background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.sidePanel-1 > h1 {
+    position: relative;
+    font-size: 50px;
+    background:rgba( 0, 0, 0, 0.527 )
+}
+
+.sidePanel-2 {
+    
+
+    height: 575px;
+    color: white;
+}
+
+
+
+
+.sidePanel-2 > h2 {
+    position: relative;
+    top: 200px;
+}
+
+
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+
+/*-----------Div's / Classes----------*/
+.profileimage {
+  margin: 1em 0;
+  border: 5px solid white;
+  animation-name: profilefade;
+  animation-duration: 2s;
+  transition: 0.5s;
+}
+
+
+
+
+@keyframes profilefade {
+  0%{opacity: 0;
+  top: -1000px}
+  100%{opacity: 1;
+  top: 0;}
+}
+
+
+#home1 {
+  line-height: 2em;
+  letter-spacing: 1px;
+    background: #8e8ef9;
+    height: 600px;
+    transition: 0.5s;
+    animation: introHome1 2s;
+}
+
+@keyframes introHome1 {
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+
+#home1 > h1 {
+  color: white;
+    position: relative;
+    top: 200px;
+    background: #333;
+    margin: 0 4em;
+}
+
+#home1 > h4 {
+    position: relative;
+    top: 200px;
+}
+#home2 {
+  line-height: 2em;
+  letter-spacing: 1px;
+    background: #7dd286;
+    height: 600px;
+    transition: 0.5s;
+    animation: introHome2 2s;
+}
+
+@keyframes introHome1 {
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+
+#home2 > h1 {
+  color: white;
+    position: relative;
+    top: 200px;
+    background: #333;
+    margin: 0 4em;
+}
+
+#home2 > h4 {
+    position: relative;
+    top: 200px;
+}
+
+#home3 {
+  line-height: 2em;
+  letter-spacing: 1px;
+    background: #7ac6d6;
+    height: 600px;
+    transition: 0.3s;
+}
+
+#home3 > h1 {
+  color: white;
+    position: relative;
+    top: 200px;
+    background: #333;
+    margin: 0 4em;
+}
+
+#home3 > h4 {
+    position: relative;
+    top: 200px;
+}
+
+
+.sociallink {
+  transition: 0.3s;
+}
+
+.sociallink::after {
+  content: "";
+  clear: right;
+  display: block;
+}
+
+.sociallink:hover {
+  transition-timing-function: ease-in-out;
+  border: 5px solid #7ae0ff;
+  border-radius: 2em;
+}
+
+.container {
+    border: 10px solid #222;
+    padding: 0;
+    background-color: #d1d1d1;
+    transition: 0.8s;
+    animation: bodyIntro 1.3s;
+}
+
+@keyframes bodyIntro {
+    0%{transform: scale(5)};
+    0%{transform: scale(1)};
+}
+
+.bodyTransparentNav {
+    transition: 0.8s;
+    animation: introPage 4s;
+}
+
+@keyframes introPage {
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+.bodyChange {
+    opacity: 0;
+}
+
+.welcome {
+    padding-top: 1em;
+  text-align: center;
+  animation-name: welcometext;
+  animation-duration: 5s;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.welcome > h1 {
+    color: white;
+}
+
+.welcomeText {
+    text-align: left;
+    background: rgba( 0, 0, 0, 0.431 );
+}
+
+.welcome > h3 {
+    font-family: Oswald;
+}
+
+.welcome > .welcomeText > h5 {
+    color: white;
+    opacity: 1;
+    width: 50%;
+}
+
+.h5white {
+    opacity: 1;
+}
+
+.welcome > .welcomeText > h4 {
+    color: white;
+    opacity: 1;
+    width: 50%;
+}
+
+.welcome > img {
+    z-index: 5;
+    position: relative;
+    overflow: hidden;
+  
+}
+.hideWelcome {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.headerimage {
+    background: url('images/headerimage.jpg');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    height: 480px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    animation: introBGImage 3s;
+    transition: 0.5s;
+}
+
+@keyframes introBGImage {
+    0%{height: 200px;
+    opacity: 1;
+    background-position: bottom;}
+    100%{height: 480px;
+    opacity: 1;}
+} 
+
+.welcomeUnderConstruction {
+      text-align: center;
+  animation-name: welcometext;
+  animation-duration: 3s;
+    background: #d1d1d1;
+    height: 700px;
+    width: 100%;
+}
+
+
+
+@keyframes welcometext {
+  0%{opacity: 0;
+  color:#7ae0ff; }
+  100%{opacity: 1;}
+}
+
+
+
+
+
+
+
+/* About Page */ 
+
+.sidePanelAboutPage {
+    float: left;
+    height: 1000px;
+    background: url('images/Ednificant.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+
+}
+
+.sidePanelAboutPage-Description {
+    color: white;
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 30%;
+    padding-top: 2em;
+    color: black;
+}
+
+.mobileAbout-Header-Image {
+    display: none;
+}
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+
+/*----------Section----------*/
+
+
+
+
+
+
+
+
+
+
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+/*------------------------------*/
+
+
+/*------------Under Construction-------------*/
+.gear-round {
+    animation: gear-spin 10s infinite;
+    -webkit-animation: gear-spin 10s infinite;
+    -ms-animation: gear-spin 10s infinite;
+    -moz-animation: gear-spin 10s infinite;
+    -0-animation: gear-spin 10s infinite;
+}
+
+@keyframes gear-spin {
+    10%{transform: rotate(40deg)}
+    20%{transform: rotate(80deg)}
+    30%{transform: rotate(120deg)}
+    40%{transform: rotate(160deg)}
+    50%{transform: rotate(200deg)}
+    60%{transform: rotate(240deg)}
+    70%{transform: rotate(280deg)}
+    80%{transform: rotate(320deg)}
+    90%{transform: rotate(360deg)}
+    100%{transform: rotate(0deg)}
+}
+
+@-webkit-keyframes gear-spin {
+    10%{transform: rotate(40deg)}
+    20%{transform: rotate(80deg)}
+    30%{transform: rotate(120deg)}
+    40%{transform: rotate(160deg)}
+    50%{transform: rotate(200deg)}
+    60%{transform: rotate(240deg)}
+    70%{transform: rotate(280deg)}
+    80%{transform: rotate(320deg)}
+    90%{transform: rotate(360deg)}
+    100%{transform: rotate(0deg)}
+}
+
+@-ms-keyframes gear-spin {
+    10%{transform: rotate(40deg)}
+    20%{transform: rotate(80deg)}
+    30%{transform: rotate(120deg)}
+    40%{transform: rotate(160deg)}
+    50%{transform: rotate(200deg)}
+    60%{transform: rotate(240deg)}
+    70%{transform: rotate(280deg)}
+    80%{transform: rotate(320deg)}
+    90%{transform: rotate(360deg)}
+    100%{transform: rotate(0deg)}
+}
+
+@-moz-keyframes gear-spin {
+    10%{transform: rotate(40deg)}
+    20%{transform: rotate(80deg)}
+    30%{transform: rotate(120deg)}
+    40%{transform: rotate(160deg)}
+    50%{transform: rotate(200deg)}
+    60%{transform: rotate(240deg)}
+    70%{transform: rotate(280deg)}
+    80%{transform: rotate(320deg)}
+    90%{transform: rotate(360deg)}
+    100%{transform: rotate(0deg)}
+}
+
+@-0-keyframes gear-spin {
+    10%{transform: rotate(40deg)}
+    20%{transform: rotate(80deg)}
+    30%{transform: rotate(120deg)}
+    40%{transform: rotate(160deg)}
+    50%{transform: rotate(200deg)}
+    60%{transform: rotate(240deg)}
+    70%{transform: rotate(280deg)}
+    80%{transform: rotate(320deg)}
+    90%{transform: rotate(360deg)}
+    100%{transform: rotate(0deg)}
+}
+
+/*----- Currently Unavailable -----*/
+.currently-unavailable {
+    padding-top: 10em;
+    background: #cccccc;
+}
+/*Media*/
+
+@media only screen and (max-width: 1400px) {
+    body {
+  position: relative;
+    background: #cecece;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 1em;
+    z-index: 3;
+    transition: 0.5s;
+}
+}
+@media only screen and (max-width: 1024px) {
+        .sidePanel {
+        float: none;
+        width: 100%;
+        height: 100%;
+        padding: 4em 0;
+    }
+    
+    .sidePanelAboutPage {
+        background: #333;
+        float: none;
+        width: 100%;
+        height: 1000px;
+        padding: 4em 0;
+        background-position: center;
+        background-attachment: none;
+
+}
+    
+    .sidePanelAboutPage-Description {
+        width: 100%;
+        color: #e8e8e8;
+    }
+    
+    .mobileAbout-Header-Image {
+        display: block;
+    }
+    
+    .mobileSkill {
+        display: block;
+    }
+    
+    #skills1 {
+        height: 100%;
+    }
+    
+    
+    
+    #skills2 {
+        height: 100%;
+    }
+        
+    .desktopnavbar {
+        display: none;
+    }
+    
+    .headerimage {
+        background: url('images/headerimage.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left;
+        background-repeat: no-repeat;
+    height: 480px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+    
+    body {
+        background: #cecece;
+          position: relative;
+    background-attachment: fixed;
+    background-position: 53%60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 1em;
+    z-index: 3;
+        transition: 1s;
+    }
+    
+    .pic1 {
+        background: url('images/homepic1.jpg');
+          position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 1em;
+        height: 350px;
+    z-index: 3;
+    }
+    
+        .pic2 {
+        background: url('images/homepic13.jpg');
+          position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%25%;
+    text-align: center;
+    padding-top: 1em;
+        height: 350px;
+    z-index: 3;
+    }
+    
+    .mobilenav {
+        display: block;
+        transition: 0.5s ease-in;
+    }
+    
+        -webkit-.mobilenav {
+        display: block;
+        transition: 0.5s ease-in;
+    }
+}
+
+@media (max-width: 640px) {
+
+    
+  .navigation-style {
+    display: none;
+  }
+    
+    #home1 > h1 {
+        margin: 0;
+    }
+    
+     #home2 > h1 {
+        margin: 0;
+    }
+    
+     #home3 > h1 {
+        margin: 0;
+    }
+    
+    #loadingText {
+    color: black;
+    position: relative;
+    top: 300px;
+    top: 300px;
+    left: 0;
+    font-size: 25px;
+    font-family: Oswald;
+}
+
+-webkit-#loadingText {
+    color: black;
+    position: relative;
+    top: 300px;
+    left: 0;
+    font-size: 25px;
+    font-family: Oswald;
+}
+
+.loadingLabel1 {
+    position: relative;
+    top: 300px;
+    left: 0;
+    font-size: 45px;
+    font-family: Oswald;
+    display: inline-block;
+    animation: loading1 0.7s infinite;
+    -webkit-animation: loading1 1s infinite;
+}
+
+-webkit-.loadingLabel1 {
+    color: white;
+    position: relative;
+    top: 300px;
+    left: 0;
+    font-size: 45px;
+    font-family: Oswald;
+    background: white;
+    display: inline-block;
+    animation: loading1 0.7s infinite;
+    -webkit-animation: loading1 1s infinite;
+}
+    
+        .pic1 {
+        background: url('images/homepic1.jpg');
+          position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 1em;
+        height: 230px;
+    z-index: 3;
+    }
+    
+        .pic2 {
+        background: url('images/homepic13.jpg');
+          position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    padding-top: 1em;
+        height: 250px;
+    z-index: 3;
+    }
+    
+        body {
+        background: #cecece;
+          position: relative;
+    background-attachment: fixed;
+    background-position: 53%60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 1em;
+    z-index: 3;
+        transition: 1s;
+    }
+    
+}
